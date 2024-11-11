@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy de Rickettsia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jeopardy de Rickettsia</h1>
+    <div class="jeopardy-board">
+        <div class="category">
+            <h2>Historia</h2>
+            <button onclick="showQuestion('Historia', 100)">100</button>
+            <button onclick="showQuestion('Historia', 200)">200</button>
+            <button onclick="showQuestion('Historia', 300)">300</button>
+            <button onclick="showQuestion('Historia', 400)">400</button>
+            <button onclick="showQuestion('Historia', 500)">500</button>
+        </div>
+        <div class="category">
+            <h2>Taxonomía</h2>
+            <button onclick="showQuestion('Taxonomía', 100)">100</button>
+            <button onclick="showQuestion('Taxonomía', 200)">200</button>
+            <button onclick="showQuestion('Taxonomía', 300)">300</button>
+            <button onclick="showQuestion('Taxonomía', 400)">400</button>
+            <button onclick="showQuestion('Taxonomía', 500)">500</button>
+        </div>
+        <div class="category">
+            <h2>Enfermedades</h2>
+            <button onclick="showQuestion('Enfermedades', 100)">100</button>
+            <button onclick="showQuestion('Enfermedades', 200)">200</button>
+            <button onclick="showQuestion('Enfermedades', 300)">300</button>
+            <button onclick="showQuestion('Enfermedades', 400)">400</button>
+            <button onclick="showQuestion('Enfermedades', 500)">500</button>
+        </div>
+        <div class="category">
+            <h2>Vectores</h2>
+            <button onclick="showQuestion('Vectores', 100)">100</button>
+            <button onclick="showQuestion('Vectores', 200)">200</button>
+            <button onclick="showQuestion('Vectores', 300)">300</button>
+            <button onclick="showQuestion('Vectores', 400)">400</button>
+            <button onclick="showQuestion('Vectores', 500)">500</button>
+        </div>
+        <div class="category">
+            <h2>Diagnóstico</h2>
+            <button onclick="showQuestion('Diagnóstico', 100)">100</button>
+            <button onclick="showQuestion('Diagnóstico', 200)">200</button>
+            <button onclick="showQuestion('Diagnóstico', 300)">300</button>
+            <button onclick="showQuestion('Diagnóstico', 400)">400</button>
+            <button onclick="showQuestion('Diagnóstico', 500)">500</button>
+        </div>
+    </div>
+
+    <div id="question-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="question-text"></h3>
+            <button onclick="showAnswer()">Mostrar Respuesta</button>
+            <p id="answer-text" style="display: none;"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
